@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_sheet_parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/detail_navigation_sheet_background">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:scrollbars="none"
+        app:headerLayout="@layout/navigation_header_detail"
+        app:menu="@menu/detail_navigation_item"
+        app:itemBackground="@drawable/detail_navigation_item_selector"
+        app:itemHorizontalPadding="8dp"
+        app:itemTextAppearance="@style/TextAppearance.MaterialComponents.Body2"
+        app:itemTextColor="@color/detail_navigation_item_selector" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

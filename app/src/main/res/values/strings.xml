@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TastyTreat</string>
+    <string name="home_servings">Servings</string>
+    <string name="home_ingredients">Ingredients</string>
+    <string name="all_steps">Steps</string>
+    <string name="detail_next_button">Next</string>
+    <string name="detail_back_button">Back</string>
+</resources>
