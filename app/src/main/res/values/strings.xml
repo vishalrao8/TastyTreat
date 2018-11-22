@@ -5,4 +5,16 @@
     <string name="all_steps">Steps</string>
     <string name="detail_next_button">Next</string>
     <string name="detail_back_button">Back</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="category_spinner_title">Which recipe to attach at home?</string>
+    <string name="category_selection_button">Configure</string>
+
+    <string-array name="recipe_array">
+        <item>Nutella Pie</item>
+        <item>Brownies</item>
+        <item>Yellow Cake</item>
+        <item>Cheesecake</item>
+    </string-array>
+
 </resources>
