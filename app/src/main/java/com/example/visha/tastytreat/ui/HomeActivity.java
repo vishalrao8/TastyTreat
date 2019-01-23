@@ -11,13 +11,17 @@ import com.example.visha.tastytreat.adapter.RecipeAdapter;
 import com.example.visha.tastytreat.api.ApiClient;
 import com.example.visha.tastytreat.api.ApiInterface;
 import com.example.visha.tastytreat.model.Recipe;
+import com.example.visha.tastytreat.utils.SimpleIdlingResource;
 
 import java.util.List;
 import java.util.Objects;
 
+import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.test.espresso.IdlingResource;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -37,6 +41,8 @@ public class HomeActivity extends AppCompatActivity implements RecipeAdapter.Car
     private RecyclerView recipeRecyclerView;
     private RecipeAdapter recipeAdapter;
     private LinearLayoutManager recyclerViewLayout;
+
+    @Nullable private SimpleIdlingResource simpleIdlingResource;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,6 +97,9 @@ public class HomeActivity extends AppCompatActivity implements RecipeAdapter.Car
         recipeRecyclerView.setLayoutManager(recyclerViewLayout);
         recipeRecyclerView.setAdapter(recipeAdapter);
 
+        if (simpleIdlingResource != null)
+            simpleIdlingResource.setIdleState(true);
+
         recipeRecyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
             public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
@@ -115,5 +124,15 @@ public class HomeActivity extends AppCompatActivity implements RecipeAdapter.Car
         intent.putExtra(EXTRA_RECIPE_POSITION, position);
         startActivity(intent);
 
+    }
+
+    @VisibleForTesting
+    @NonNull
+    public IdlingResource getIdlingResource() {
+
+        if (simpleIdlingResource == null)
+            simpleIdlingResource = new SimpleIdlingResource();
+
+        return simpleIdlingResource;
     }
 }

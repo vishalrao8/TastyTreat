@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin">
+
+    <TextView
+        android:id="@+id/appwidget_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/widget_top_background"
+        android:gravity="center"
+        android:elevation="5dp"
+        android:padding="8dp"
+        android:textSize="20sp"
+        style="@style/TextAppearance.MaterialComponents.Headline5"/>
+
+    <ListView
+        android:id="@+id/appwidget_steps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appwidget_title"
+        android:layout_alignStart="@+id/appwidget_title"
+        android:layout_alignEnd="@+id/appwidget_title"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:background="@drawable/widget_body_background"
+        android:gravity="center"/>
+
+</RelativeLayout>
