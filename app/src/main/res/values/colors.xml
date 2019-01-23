@@ -6,17 +6,12 @@
 
     <!-- Color resources for activity_home -->
 
-    <!-- Color resources for chips -->
     <color name="chipBackground">#12000000</color>
     <color name="dividerBackground">#12000000</color>
     <color name="chipTextColor">#90000000</color>
     <color name="chipQuantityColor">#60000000</color>
-
     <color name="tagColor">#40000000</color>
     <color name="expandedDetailsColor">#70000000</color>
-
-    <!-- End of color resources for activity_home -->
-
 
     <!-- Color resources for activity_detail -->
 
@@ -24,5 +19,4 @@
     <color name="navigationItem">#000000</color>
     <color name="navigationItemSelected">#120800FF</color>
 
-    <!-- End of Color resources for activity_detail -->
 </resources>

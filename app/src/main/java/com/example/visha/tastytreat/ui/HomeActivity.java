@@ -29,7 +29,7 @@ public class HomeActivity extends AppCompatActivity implements RecipeAdapter.Car
     private static final int SCROLL_DIRECTION_UP = -1;
 
     private static final String TAG = HomeActivity.class.getSimpleName();
-    public static final String INTENT_EXTRA_POSITION = "intent_extra_position";
+    public static final String EXTRA_RECIPE_POSITION = "extra_recipe_position";
     public static List<Recipe> recipeList;
 
     private ConnectivityManager connectivityManager;
@@ -112,7 +112,7 @@ public class HomeActivity extends AppCompatActivity implements RecipeAdapter.Car
     private void moveToDetailScreen (int position) {
 
         Intent intent = new Intent(this, DetailActivity.class);
-        intent.putExtra(INTENT_EXTRA_POSITION, position);
+        intent.putExtra(EXTRA_RECIPE_POSITION, position);
         startActivity(intent);
 
     }

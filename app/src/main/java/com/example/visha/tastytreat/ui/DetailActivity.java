@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.FrameLayout;
@@ -16,6 +15,7 @@ import android.widget.Toast;
 import com.example.visha.tastytreat.R;
 import com.example.visha.tastytreat.utils.DpToPixel;
 import com.example.visha.tastytreat.view.BottomSheetFragment;
+import com.example.visha.tastytreat.widget.RecipeConfigureActivity;
 import com.google.android.material.bottomappbar.BottomAppBar;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
@@ -24,18 +24,17 @@ import java.util.Objects;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.fragment.app.FragmentManager;
 
 import static android.content.res.Configuration.ORIENTATION_LANDSCAPE;
-import static android.content.res.Configuration.ORIENTATION_PORTRAIT;
-import static com.example.visha.tastytreat.ui.HomeActivity.INTENT_EXTRA_POSITION;
+import static com.example.visha.tastytreat.ui.HomeActivity.EXTRA_RECIPE_POSITION;
 import static com.example.visha.tastytreat.ui.HomeActivity.recipeList;
 
 public class DetailActivity extends AppCompatActivity implements BottomSheetFragment.OnNavigationItemChecked {
 
     private static final String TAG = DetailActivity.class.getSimpleName();
+    public static final String EXTRA_STEP_POSITION = "extra_step_position";
 
     public static int position;
     public static int fragmentPosition;
@@ -159,7 +158,11 @@ public class DetailActivity extends AppCompatActivity implements BottomSheetFrag
         /**
          * Getting position of recipe item being selected from intent created this activity to show corresponding recipe details.
          */
-        position = getIntent().getIntExtra(INTENT_EXTRA_POSITION, -1);
+        position = getIntent().getIntExtra(EXTRA_RECIPE_POSITION, -1);
+        fragmentPosition = getIntent().getIntExtra(EXTRA_STEP_POSITION, 0);
+
+        if (getIntent().hasExtra(EXTRA_STEP_POSITION))
+            HomeActivity.recipeList = RecipeConfigureActivity.recipeList;
 
         if (position != -1)
             populateUI();
