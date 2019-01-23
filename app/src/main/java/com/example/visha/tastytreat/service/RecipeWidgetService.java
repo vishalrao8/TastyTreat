@@ -8,8 +8,6 @@ import android.widget.RemoteViews;
 import android.widget.RemoteViewsService;
 
 import com.example.visha.tastytreat.R;
-import com.example.visha.tastytreat.ui.DetailActivity;
-import com.example.visha.tastytreat.widget.RecipeWidgetProvider;
 
 import static com.example.visha.tastytreat.ui.DetailActivity.EXTRA_STEP_POSITION;
 import static com.example.visha.tastytreat.ui.HomeActivity.EXTRA_RECIPE_POSITION;

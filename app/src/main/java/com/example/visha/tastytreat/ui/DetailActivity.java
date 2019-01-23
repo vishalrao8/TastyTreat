@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.FrameLayout;
-import android.widget.Toast;
 
 import com.example.visha.tastytreat.R;
 import com.example.visha.tastytreat.utils.DpToPixel;

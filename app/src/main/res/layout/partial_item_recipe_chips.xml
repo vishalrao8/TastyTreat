@@ -105,7 +105,6 @@
 
         <!-- Steps' chip -->
         <View
-            android:id="@+id/step_chip"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@drawable/home_chip_background"
