@@ -4,13 +4,15 @@
     <color name="colorPrimaryDark">#FFFFFF</color>
     <color name="colorAccent">#0800FF</color>
 
+    <color name="colorGreyDark">#20000000</color>
+
     <!-- Color resources for activity_home -->
 
     <color name="chipBackground">#12000000</color>
     <color name="dividerBackground">#12000000</color>
     <color name="chipTextColor">#90000000</color>
-    <color name="chipQuantityColor">#60000000</color>
-    <color name="expandedDetailsColor">#70000000</color>
+    <color name="chipQuantityColor">#80000000</color>
+    <color name="expandedDetailsColor">#80000000</color>
 
     <!-- Color resources for activity_detail -->
 
