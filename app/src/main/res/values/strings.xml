@@ -7,6 +7,7 @@
     <string name="detail_back_button">Back</string>
     <string name="category_spinner_title">Which recipe to attach at home?</string>
     <string name="category_selection_button">Configure</string>
+    <string name="recipe_item_image">Recipe item image</string>
 
     <string-array name="recipe_array">
         <item>Nutella Pie</item>

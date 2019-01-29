@@ -14,7 +14,6 @@
         android:layout_marginTop="0dp"
         android:background="@drawable/widget_top_background"
         android:gravity="center"
-        android:elevation="5dp"
         android:padding="8dp"
         android:textSize="20sp"
         style="@style/TextAppearance.MaterialComponents.Headline5"/>

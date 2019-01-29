@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.visha.tastytreat">
+    package="com.unitedcreation.visha.tastytreat">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -16,7 +16,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning"
         tools:targetApi="m">
-        <activity android:name=".ui.HomeActivity">
+        <activity android:name="com.unitedcreation.visha.tastytreat.ui.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,24 +24,24 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.DetailActivity"
+            android:name="com.unitedcreation.visha.tastytreat.ui.DetailActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
-            android:parentActivityName=".ui.HomeActivity">
+            android:parentActivityName="com.unitedcreation.visha.tastytreat.ui.HomeActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.HomeActivity" />
+                android:value="com.unitedcreation.visha.tastytreat.ui.HomeActivity" />
         </activity>
-        <activity android:name=".widget.RecipeConfigureActivity">
+        <activity android:name="com.unitedcreation.visha.tastytreat.widget.RecipeConfigureActivity">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
             </intent-filter>
         </activity>
 
         <service
-            android:name=".service.RecipeWidgetService"
+            android:name="com.unitedcreation.visha.tastytreat.service.RecipeWidgetService"
             android:permission="android.permission.BIND_REMOTEVIEWS" />
 
-        <receiver android:name=".widget.RecipeWidgetProvider">
+        <receiver android:name="com.unitedcreation.visha.tastytreat.widget.RecipeWidgetProvider">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
