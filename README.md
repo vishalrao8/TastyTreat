@@ -16,7 +16,7 @@ An app to view video recipes as part of handling media loading, optimizing UX & 
 
 # Usage
 
-- Start the application by clicking on the app icon from the launcher menu.
+- Start the application by clicking on the app icon in the launcher menu.
 - Choose any kind of treat you want to explore.
 - Navigate between adjecent steps of recipe using on screen navigation controls provided within the app.
 - Explore all the steps at a glance using the bottom navigation drawer located at the bottom left corner.
