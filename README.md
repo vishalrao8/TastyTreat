@@ -1,5 +1,5 @@
 # TastyTreat
-An app to view video recipes as part of handling media loading, optimizing UX & integrating 3rd party libraries.
+An demo app to view video recipes, handles media loading, full screen video in landscape. It integrates with ExoPlayer underhood to work with video files.
 
 # Index
 
