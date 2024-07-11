@@ -3,16 +3,10 @@ An app to view video recipes as part of handling media loading, optimizing UX & 
 
 # Index
 
-- [Installation](https://github.com/vishalrao8/TastyTreat#installation)
 - [Usage](https://github.com/vishalrao8/TastyTreat#usage)
   - [User Interface](https://github.com/vishalrao8/TastyTreat#user-interface)
 - [Contribution](https://github.com/vishalrao8/TastyTreat#contribution)
 - [Licence](https://github.com/vishalrao8/TastyTreat#licence)
-
-# Installation
-
-- Grab the APK from [here](https://drive.google.com/open?id=13WV7efNDaYt1GztupGhWPnDjM-KfHiN3).
-- Enable installation from unknown sources in settings if asked during installation.
 
 # Usage
 
@@ -23,7 +17,7 @@ An app to view video recipes as part of handling media loading, optimizing UX & 
 
 ## User Interface
 
-<img src="https://drive.google.com/uc?export=view&id=1aqL2MoyXQ1T6eUOIJZsTpgx32OaAngjb" width="150">&nbsp; &nbsp; &nbsp;<img src="https://drive.google.com/uc?export=view&id=1VRVB-XE9PVgJ7aDfjlZPN3vQc2pgS3PJ" width="150">&nbsp; &nbsp; &nbsp;<img src="https://drive.google.com/uc?export=view&id=1SYN-5kwsGreKF96oSE0t3RLT8yMtqYHD" width="150">&nbsp; &nbsp; &nbsp;<img src="https://drive.google.com/uc?export=view&id=1TTZS5feCx4KUk9kq3TReskbtYoWHnCCw" width="150">&nbsp; &nbsp; &nbsp;<img src="https://drive.google.com/uc?export=view&id=1DQXJ8otFYBxxBdC_v_bQ_Y-YsfWo9y5O" width="150">
+https://github.com/vishalrao8/TastyTreat/assets/27092065/6d74684f-28db-497b-950b-c90ed522fcb6
 
 # Contribution
 
